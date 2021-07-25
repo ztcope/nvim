@@ -1,2 +1,3 @@
-/plugins
-plug.vim
+plugins/
+plugin/
+autoload/plug.vim
