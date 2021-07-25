@@ -306,13 +306,13 @@ local on_attach = function(_client, bufnr)
 end
 
 -- Disable diagnostics. I know what I'm doing, maybe
-vim.lsp.handlers['textDocument/publishDiagnostics'] = vim.lsp.with(
-    vim.lsp.diagnostic.on_publish_diagnostics, {
-        virtual_text = false,
-        signs = false,
-        update_in_insert = false
-    }
-)
+-- vim.lsp.handlers['textDocument/publishDiagnostics'] = vim.lsp.with(
+--     vim.lsp.diagnostic.on_publish_diagnostics, {
+--         virtual_text = false,
+--         signs = false,
+--         update_in_insert = false
+--     }
+-- )
 
 -- Enable python lsp server
 lspconfig['pyright'].setup {
